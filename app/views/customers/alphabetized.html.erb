@@ -1,8 +1,8 @@
-<h1>All Customers</h1>
+<h1>Alphabetized Customers</h1>
 <% @customers.each do |customer| %>
     <div>
         <%= render partial: "customer", locals: {customer: customer } %>
     </div>
 <% end %>
-<a href="http://localhost:3000/customers/alphabetized">Alphabetized customer list.</a><br>
+<a href="http://localhost:3000/customers/">Full customer list.</a><br>
 <a href="http://localhost:3000/customers/missing_email">Customers with missing emails.</a>
