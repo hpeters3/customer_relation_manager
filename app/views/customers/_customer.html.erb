@@ -1,0 +1,13 @@
+<h2><%=customer.full_name %></h2>
+<% if customer.image %>
+    <p>Description: <%=customer.image%></p>
+<% end %>
+<% if customer.phone_number %>
+    <p>Phone number: <%=customer.phone_number%></p>
+<% end %>
+<% if customer.email_address %>
+    <p>Email: <%=customer.email_address%></p>
+<% end %>
+<% if customer.notes %>
+    <p>Notes: <%=customer.notes%></p>
+<% end %>
