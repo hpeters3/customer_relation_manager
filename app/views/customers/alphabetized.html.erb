@@ -1,8 +1,12 @@
 <h1>Alphabetized Customers</h1>
-<% @customers.each do |customer| %>
+<div id="outer">
+    <% @customers.each do |customer| %>
+        <div id="inner">
+            <%= render partial: "customer", locals: {customer: customer } %>
+        </div>
+    <% end %>
     <div>
-        <%= render partial: "customer", locals: {customer: customer } %>
+        <a href="http://localhost:3000/customers/">Click here for the full customer list,</a>
+        <a href="http://localhost:3000/customers/missing_email"> and here for customers with missing emails.</a>
     </div>
-<% end %>
-<a href="http://localhost:3000/customers/">Full customer list.</a><br>
-<a href="http://localhost:3000/customers/missing_email">Customers with missing emails.</a>
+</div>

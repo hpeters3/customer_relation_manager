@@ -3,11 +3,11 @@
     <%= image_tag url_for(customer.image), alt: customer.full_name %>
 <% end %>
 <% if customer.phone_number.present? %>
-    <p>Phone number: <%=customer.phone_number%></p>
+    <p><span>Phone number:</span> <%=customer.phone_number%></p>
 <% end %>
 <% if customer.email_address.present? %>
-    <p>Email: <%=customer.email_address%></p>
+    <p><span>Email:</span> <%=customer.email_address%></p>
 <% end %>
 <% if customer.notes.present? %>
-    <p>Notes: <%=customer.notes%></p>
+    <p><span>Notes:</span> <%=customer.notes%></p>
 <% end %>
